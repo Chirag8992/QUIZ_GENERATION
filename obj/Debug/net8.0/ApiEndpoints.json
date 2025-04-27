@@ -1,0 +1,1297 @@
+[
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AdminModelsController",
+    "Method": "GetAdminModel",
+    "RelativePath": "api/AdminModels",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.AdminModel, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AdminModelsController",
+    "Method": "PostAdminModel",
+    "RelativePath": "api/AdminModels",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adminModel",
+        "Type": "Quizgeneration_Project.model.AdminModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.AdminModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AdminModelsController",
+    "Method": "GetAdminModel",
+    "RelativePath": "api/AdminModels/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.AdminModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AdminModelsController",
+    "Method": "PutAdminModel",
+    "RelativePath": "api/AdminModels/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "adminModel",
+        "Type": "Quizgeneration_Project.model.AdminModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AdminModelsController",
+    "Method": "DeleteAdminModel",
+    "RelativePath": "api/AdminModels/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AdminModelsController",
+    "Method": "Login",
+    "RelativePath": "api/AdminModels/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginModel",
+        "Type": "Quizgeneration_Project.Controllers.AdminLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "GetAnswerOptions",
+    "RelativePath": "api/AnswerOptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.AnswerOption, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "PostAnswerOption",
+    "RelativePath": "api/AnswerOptions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "answerOption",
+        "Type": "Quizgeneration_Project.model.AnswerOption",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.AnswerOption",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "GetAnswerOption",
+    "RelativePath": "api/AnswerOptions/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.AnswerOption",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "PutAnswerOption",
+    "RelativePath": "api/AnswerOptions/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "answerOption",
+        "Type": "Quizgeneration_Project.model.AnswerOption",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "DeleteAnswerOption",
+    "RelativePath": "api/AnswerOptions/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "PostBulkAnswerOptions",
+    "RelativePath": "api/AnswerOptions/Bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "options",
+        "Type": "System.Collections.Generic.List\u00601[[Quizgeneration_Project.model.AnswerOption, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.AnswerOption, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.AnswerOptionsController",
+    "Method": "GetAnswerOptionsByQuestion",
+    "RelativePath": "api/AnswerOptions/Question/{questionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.AnswerOption, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuestionsController",
+    "Method": "GetQuestions",
+    "RelativePath": "api/Questions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.Question, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuestionsController",
+    "Method": "PostQuestion",
+    "RelativePath": "api/Questions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "question",
+        "Type": "Quizgeneration_Project.model.Question",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Question",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuestionsController",
+    "Method": "GetQuestion",
+    "RelativePath": "api/Questions/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Question",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuestionsController",
+    "Method": "PutQuestion",
+    "RelativePath": "api/Questions/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "question",
+        "Type": "Quizgeneration_Project.model.Question",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuestionsController",
+    "Method": "DeleteQuestion",
+    "RelativePath": "api/Questions/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuestionsController",
+    "Method": "GetQuestionsByQuiz",
+    "RelativePath": "api/Questions/Quiz/{quizId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.Question, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "GetQuizzes",
+    "RelativePath": "api/Quiz",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.Quiz, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "PostQuiz",
+    "RelativePath": "api/Quiz",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizDto",
+        "Type": "Quizgeneration_Project.Controllers.QuizController\u002BCreateQuizDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Quiz",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "GetQuiz",
+    "RelativePath": "api/Quiz/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Quiz",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "PutQuiz",
+    "RelativePath": "api/Quiz/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "quiz",
+        "Type": "Quizgeneration_Project.model.Quiz",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "DeleteQuiz",
+    "RelativePath": "api/Quiz/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "GetQuizDetails",
+    "RelativePath": "api/Quiz/{quizId}/Details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "GetQuizzesByStudent",
+    "RelativePath": "api/Quiz/Student/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "GetQuizzesByTeacher",
+    "RelativePath": "api/Quiz/Teacher/{teacherId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.Quiz, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizController",
+    "Method": "PostQuizWithQuestions",
+    "RelativePath": "api/Quiz/WithQuestions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizDto",
+        "Type": "Quizgeneration_Project.Controllers.QuizController\u002BQuizWithQuestionsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Quiz",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizResultController",
+    "Method": "GetQuizResults",
+    "RelativePath": "api/QuizResult",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.QuizResult, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizResultController",
+    "Method": "PostQuizResult",
+    "RelativePath": "api/QuizResult",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resultDto",
+        "Type": "Quizgeneration_Project.Controllers.QuizResultController\u002BCreateQuizResultDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.QuizResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizResultController",
+    "Method": "GetQuizResult",
+    "RelativePath": "api/QuizResult/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.QuizResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizResultController",
+    "Method": "DeleteQuizResult",
+    "RelativePath": "api/QuizResult/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.QuizResultController",
+    "Method": "GetStudentResults",
+    "RelativePath": "api/QuizResult/Student/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.QuizResult, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentController",
+    "Method": "GetStudents",
+    "RelativePath": "api/Student",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Student.model.StudentModel, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentController",
+    "Method": "GetStudent",
+    "RelativePath": "api/Student/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Student.model.StudentModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentController",
+    "Method": "DeleteTeacher",
+    "RelativePath": "api/Student/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentController",
+    "Method": "Login",
+    "RelativePath": "api/Student/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "Student.model.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentController",
+    "Method": "Register",
+    "RelativePath": "api/Student/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "student",
+        "Type": "Student.model.StudentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Student.model.StudentModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentController",
+    "Method": "GetStandards",
+    "RelativePath": "api/Student/standards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentAnswersController",
+    "Method": "GetStudentAnswers",
+    "RelativePath": "api/StudentAnswers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.StudentAnswer, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentAnswersController",
+    "Method": "PostStudentAnswer",
+    "RelativePath": "api/StudentAnswers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentAnswer",
+        "Type": "Quizgeneration_Project.model.StudentAnswer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.StudentAnswer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentAnswersController",
+    "Method": "GetStudentAnswer",
+    "RelativePath": "api/StudentAnswers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.StudentAnswer",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentAnswersController",
+    "Method": "PutStudentAnswer",
+    "RelativePath": "api/StudentAnswers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentAnswer",
+        "Type": "Quizgeneration_Project.model.StudentAnswer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentAnswersController",
+    "Method": "DeleteStudentAnswer",
+    "RelativePath": "api/StudentAnswers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentQuizAttemptedsController",
+    "Method": "GetStudentQuizAttempts",
+    "RelativePath": "api/StudentQuizAttempteds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.StudentQuizAttempted, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentQuizAttemptedsController",
+    "Method": "PostStudentQuizAttempted",
+    "RelativePath": "api/StudentQuizAttempteds",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentQuizAttempted",
+        "Type": "Quizgeneration_Project.model.StudentQuizAttempted",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.StudentQuizAttempted",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentQuizAttemptedsController",
+    "Method": "GetStudentQuizAttempted",
+    "RelativePath": "api/StudentQuizAttempteds/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.StudentQuizAttempted",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentQuizAttemptedsController",
+    "Method": "PutStudentQuizAttempted",
+    "RelativePath": "api/StudentQuizAttempteds/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "studentQuizAttempted",
+        "Type": "Quizgeneration_Project.model.StudentQuizAttempted",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.StudentQuizAttemptedsController",
+    "Method": "DeleteStudentQuizAttempted",
+    "RelativePath": "api/StudentQuizAttempteds/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.SubjectsController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/Subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Quizgeneration_Project.model.Subject, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.SubjectsController",
+    "Method": "PostSubject",
+    "RelativePath": "api/Subjects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subject",
+        "Type": "Quizgeneration_Project.model.Subject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Subject",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.SubjectsController",
+    "Method": "GetSubject",
+    "RelativePath": "api/Subjects/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Quizgeneration_Project.model.Subject",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.SubjectsController",
+    "Method": "PutSubject",
+    "RelativePath": "api/Subjects/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "subject",
+        "Type": "Quizgeneration_Project.model.Subject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.SubjectsController",
+    "Method": "DeleteSubject",
+    "RelativePath": "api/Subjects/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.SubjectsController",
+    "Method": "PostMultipleSubjects",
+    "RelativePath": "api/Subjects/bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Quizgeneration_Project.Controllers.SubjectsController\u002BSubjectAssignmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.TeacherController",
+    "Method": "GetTeachers",
+    "RelativePath": "api/Teacher",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Teachers.model.TeacherModel, Quizgeneration Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.TeacherController",
+    "Method": "AddTeacher",
+    "RelativePath": "api/Teacher",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Quizgeneration_Project.Controllers.CreateTeacherDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.TeacherController",
+    "Method": "GetTeacher",
+    "RelativePath": "api/Teacher/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Teachers.model.TeacherModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.TeacherController",
+    "Method": "DeleteTeacher",
+    "RelativePath": "api/Teacher/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.TeacherController",
+    "Method": "Login",
+    "RelativePath": "api/Teacher/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Student.model.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Quizgeneration_Project.Controllers.TeacherController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Teacher/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenModel",
+        "Type": "Quizgeneration_Project.Controllers.TokenModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
