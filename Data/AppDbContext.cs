@@ -101,10 +101,10 @@ namespace Quizgeneration_Project.Data
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<StudentAnswer>()
-                .HasOne<StudentQuizAttempted>()
-                .WithMany(sqa => sqa.StudentAnswers)
-                .HasForeignKey("StudentQuizAttemptedId")
-                .OnDelete(DeleteBehavior.Restrict);
+    .HasOne(sa => sa.StudentQuizAttempt)
+    .WithMany(sqa => sqa.StudentAnswers)
+    .HasForeignKey(sa => sa.StudentQuizAttemptedId)  // Use StudentQuizAttemptedId with 'ed'
+    .OnDelete(DeleteBehavior.Restrict);
         }
         public DbSet<Quizgeneration_Project.model.AdminModel> AdminModel { get; set; } = default!;
     }

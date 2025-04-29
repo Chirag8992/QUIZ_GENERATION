@@ -1074,6 +1074,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "standard",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "responses": {
@@ -1084,42 +1092,6 @@
       }
     },
     "/api/QuizResult": {
-      "get": {
-        "tags": [
-          "QuizResult"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResult"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResult"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResult"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
       "post": {
         "tags": [
           "QuizResult"
@@ -1128,17 +1100,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateQuizResultDto"
+                "$ref": "#/components/schemas/QuizResultDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateQuizResultDto"
+                "$ref": "#/components/schemas/QuizResultDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateQuizResultDto"
+                "$ref": "#/components/schemas/QuizResultDto"
               }
             }
           }
@@ -1205,37 +1177,16 @@
             }
           }
         }
-      },
-      "delete": {
-        "tags": [
-          "QuizResult"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
-    "/api/QuizResult/Student/{studentId}": {
+    "/api/QuizResult/statistics/{quizId}": {
       "get": {
         "tags": [
           "QuizResult"
         ],
         "parameters": [
           {
-            "name": "studentId",
+            "name": "quizId",
             "in": "path",
             "required": true,
             "schema": {
@@ -1250,26 +1201,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResult"
-                  }
+                  "$ref": "#/components/schemas/QuizStatisticsDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResult"
-                  }
+                  "$ref": "#/components/schemas/QuizStatisticsDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/QuizResult"
-                  }
+                  "$ref": "#/components/schemas/QuizStatisticsDto"
                 }
               }
             }
@@ -1837,6 +1779,54 @@
         }
       }
     },
+    "/api/StudentQuizAttempteds/SubmitQuiz": {
+      "post": {
+        "tags": [
+          "StudentQuizAttempteds"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuizSubmissionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuizSubmissionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuizSubmissionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentQuizAttempted"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentQuizAttempted"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StudentQuizAttempted"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Subjects/bulk": {
       "post": {
         "tags": [
@@ -2381,34 +2371,6 @@
         },
         "additionalProperties": false
       },
-      "CreateQuizResultDto": {
-        "required": [
-          "completionDate",
-          "quizId",
-          "score",
-          "studentId"
-        ],
-        "type": "object",
-        "properties": {
-          "quizId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "studentId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "score": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "completionDate": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
       "CreateTeacherDto": {
         "type": "object",
         "properties": {
@@ -2479,6 +2441,42 @@
               "$ref": "#/components/schemas/AnswerOption"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuestionAnalysisDto": {
+        "type": "object",
+        "properties": {
+          "questionText": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalAnswers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "correctAnswers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "averageTime": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuestionAnswerDto": {
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "selectedOptionId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -2615,6 +2613,90 @@
         },
         "additionalProperties": false
       },
+      "QuizResultDto": {
+        "required": [
+          "quizId",
+          "score",
+          "studentId"
+        ],
+        "type": "object",
+        "properties": {
+          "quizId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "completionDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuizStatisticsDto": {
+        "type": "object",
+        "properties": {
+          "totalAttempts": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "averageScore": {
+            "type": "number",
+            "format": "double"
+          },
+          "averageTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentResults": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StudentResultDto"
+            },
+            "nullable": true
+          },
+          "questionAnalysis": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/QuestionAnalysisDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuizSubmissionDto": {
+        "type": "object",
+        "properties": {
+          "quizId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "answers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/QuestionAnswerDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "QuizWithQuestionsDto": {
         "required": [
           "questions",
@@ -2658,14 +2740,14 @@
             "type": "integer",
             "format": "int32"
           },
+          "studentQuizAttempt": {
+            "$ref": "#/components/schemas/StudentQuizAttempted"
+          },
           "question": {
             "$ref": "#/components/schemas/Question"
           },
           "selectedOption": {
             "$ref": "#/components/schemas/AnswerOption"
-          },
-          "studentQuizAttempt": {
-            "$ref": "#/components/schemas/StudentQuizAttempted"
           }
         },
         "additionalProperties": false
@@ -2755,6 +2837,32 @@
               "$ref": "#/components/schemas/StudentAnswer"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudentResultDto": {
+        "type": "object",
+        "properties": {
+          "studentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "timeTaken": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "submittedAt": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

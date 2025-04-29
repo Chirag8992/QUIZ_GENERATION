@@ -181,32 +181,43 @@ namespace Quizgeneration_Project.Controllers
                 return NotFound();
             }
 
+            // Explicitly load questions if they're not loading
+            if (quiz.Questions == null || !quiz.Questions.Any())
+            {
+                await _context.Entry(quiz)
+                    .Collection(q => q.Questions)
+                    .LoadAsync();
+
+                foreach (var question in quiz.Questions)
+                {
+                    await _context.Entry(question)
+                        .Collection(q => q.AnswerOptions)
+                        .LoadAsync();
+                }
+            }
+
             var result = new
             {
-                id = quiz.Id,
-                title = quiz.Title,
-                subject = quiz.Subject,
-                standard = quiz.standard,
-                duration = quiz.Duration,
-                scheduledFor = quiz.StartTime,
-                createdAt = quiz.DateTime,
-                questions = quiz.Questions.Select(q => new
+                Id = quiz.Id,
+                Title = quiz.Title,
+                Subject = quiz.Subject,
+                Standard = quiz.standard,
+                Questions = quiz.Questions.Select(q => new
                 {
-                    questionId = q.Id,
-                    questionText = q.QuestionText,
-                    marks = q.Marks,
-                    options = q.AnswerOptions.Select(o => new
+                    Id = q.Id,
+                    QuestionText = q.QuestionText,
+                    Marks = q.Marks,
+                    Options = q.AnswerOptions.Select(o => new
                     {
-                        optionId = o.Id,
-                        optionText = o.OptionText,
-                        isCorrect = o.IsCorrect
+                        Id = o.Id,
+                        OptionText = o.OptionText,
+                        IsCorrect = o.IsCorrect
                     }).ToList()
                 }).ToList()
             };
 
             return Ok(result);
         }
-
 
         // POST: api/Quiz/WithQuestions
         [HttpPost("WithQuestions")]
@@ -303,66 +314,81 @@ namespace Quizgeneration_Project.Controllers
             return NoContent();
         }
 
-        // GET: api/Quiz/Student/{studentId}
         [HttpGet("Student/{studentId}")]
-        public async Task<ActionResult<object>> GetQuizzesByStudent(int studentId)
+        public async Task<ActionResult<dynamic>> GetStudentQuizzes(int studentId, [FromQuery] int? standard)
         {
-            // First, get the student to determine their subject/standard
-            var student = await _context.student.FindAsync(studentId);
-            var standard = await _context.Subjects.FindAsync();
-            if (student == null)
+            try
             {
-                return NotFound(new { message = $"Student with ID {studentId} not found." });
-            }
-
-            // Get quizzes for the student's standard
-            var allQuizzes = await _context.Quizzes
-                .Include(q => q.Questions)
-                .Where(q => q.standard == student.Standard)
-                .ToListAsync();
-
-            // Get the student's completed quizzes
-            var completedQuizIds = await _context.QuizResults
-                .Where(qr => qr.StudentId == studentId)
-                .Select(qr => qr.QuizId)
-                .ToListAsync();
-
-            // Filter quizzes into upcoming and completed
-            var currentTime = DateTime.Now;
-            var upcomingQuizzes = allQuizzes
-                .Where(q => !completedQuizIds.Contains(q.Id) && q.StartTime > currentTime)
-                .OrderBy(q => q.StartTime)
-                .ToList();
-
-            var completedQuizzes = allQuizzes
-                .Where(q => completedQuizIds.Contains(q.Id))
-                .ToList();
-
-            // Get detailed result information for completed quizzes
-            var quizResults = await _context.QuizResults
-                .Where(qr => qr.StudentId == studentId)
-                .ToListAsync();
-
-            // Combine the quiz and result information
-            var completedQuizzesWithResults = completedQuizzes.Select(quiz => {
-                var result = quizResults.FirstOrDefault(qr => qr.QuizId == quiz.Id);
-                return new
+                // Get student's standard if not provided
+                if (!standard.HasValue)
                 {
-                    quiz = quiz,
-                    score = result?.Score ?? 0,
-                    totalQuestions = quiz.Questions.Count,
-                    percentage = result?.Score * 100.0 / quiz.Questions.Count ?? 0,
-                    completedDate = result?.CompletionDate ?? DateTime.MinValue
-                };
-            }).OrderByDescending(q => q.completedDate).ToList();
+                    var student = await _context.student.FindAsync(studentId);
+                    if (student != null)
+                    {
+                        standard = student.Standard;
+                    }
+                }
 
-            return new
+                var now = DateTime.UtcNow;
+
+                // Get all quizzes (filter by standard if provided)
+                var allQuizzes = await _context.Quizzes
+                    .Where(q => !standard.HasValue || q.standard == standard.Value)
+                    .Include(q => q.Questions)
+                    .ToListAsync();
+
+                // Get student's completed quiz IDs
+                var completedQuizResults = await _context.QuizResults
+                    .Where(qr => qr.StudentId == studentId)
+                    .ToListAsync();
+
+                var completedQuizIds = completedQuizResults.Select(qr => qr.QuizId).ToList();
+
+                var upcomingQuizzes = allQuizzes
+                    .Where(q => !completedQuizIds.Contains(q.Id))
+                    .Select(q => new
+                    {
+                        q.Id,
+                        q.Title,
+                        q.Subject,
+                        q.StartTime,
+                        q.Duration,
+                        q.standard,
+                        QuestionCount = q.Questions.Count
+                    })
+                    .ToList();
+
+                var completedQuizzes = await _context.QuizResults
+                    .Where(qr => qr.StudentId == studentId)
+                    .Include(qr => qr.Quiz)
+                    .Select(qr => new
+                    {
+                        Quiz = new
+                        {
+                            qr.Quiz.Id,
+                            qr.Quiz.Title,
+                            qr.Quiz.Subject,
+                            qr.Quiz.standard,
+                            qr.Quiz.StartTime
+                        },
+                        qr.Score,
+                        CompletedDate = qr.CompletionDate,
+                        TotalQuestions = qr.Quiz.Questions.Count,
+                        Percentage = (qr.Score * 100) / (qr.Quiz.Questions.Count > 0 ? qr.Quiz.Questions.Count : 1)
+                    })
+                    .ToListAsync();
+
+                return Ok(new
+                {
+                    upcomingQuizzes,
+                    completedQuizzes
+                });
+            }
+            catch (Exception ex)
             {
-                upcomingQuizzes = upcomingQuizzes,
-                completedQuizzes = completedQuizzesWithResults
-            };
+                return StatusCode(500, new { message = ex.Message });
+            }
         }
-
         private bool QuizExists(int id)
         {
             return _context.Quizzes.Any(e => e.Id == id);

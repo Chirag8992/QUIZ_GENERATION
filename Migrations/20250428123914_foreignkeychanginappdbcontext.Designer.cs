@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Quizgeneration_Project.Data;
 
@@ -11,9 +12,11 @@ using Quizgeneration_Project.Data;
 namespace Quizgeneration_Project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250428123914_foreignkeychanginappdbcontext")]
+    partial class foreignkeychanginappdbcontext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,6 +191,9 @@ namespace Quizgeneration_Project.Migrations
                     b.Property<int>("SelectedOptionsId")
                         .HasColumnType("int");
 
+                    b.Property<int>("StudentQuizAttemptId")
+                        .HasColumnType("int");
+
                     b.Property<int>("StudentQuizAttemptedId")
                         .HasColumnType("int");
 
@@ -196,6 +202,8 @@ namespace Quizgeneration_Project.Migrations
                     b.HasIndex("QuestionId");
 
                     b.HasIndex("SelectedOptionsId");
+
+                    b.HasIndex("StudentQuizAttemptId");
 
                     b.HasIndex("StudentQuizAttemptedId");
 
@@ -417,6 +425,12 @@ namespace Quizgeneration_Project.Migrations
                         .IsRequired();
 
                     b.HasOne("Quizgeneration_Project.model.StudentQuizAttempted", "StudentQuizAttempt")
+                        .WithMany()
+                        .HasForeignKey("StudentQuizAttemptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Quizgeneration_Project.model.StudentQuizAttempted", null)
                         .WithMany("StudentAnswers")
                         .HasForeignKey("StudentQuizAttemptedId")
                         .OnDelete(DeleteBehavior.Restrict)

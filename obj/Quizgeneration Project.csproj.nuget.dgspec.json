@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project\\Quizgeneration Project.csproj": {}
+    "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Quizgeneration Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project\\Quizgeneration Project.csproj": {
+    "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Quizgeneration Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project\\Quizgeneration Project.csproj",
+        "projectUniqueName": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Quizgeneration Project.csproj",
         "projectName": "Quizgeneration Project",
-        "projectPath": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project\\Quizgeneration Project.csproj",
+        "projectPath": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Quizgeneration Project.csproj",
         "packagesPath": "C:\\Users\\Chirag Vasara\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project\\obj\\",
+        "outputPath": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

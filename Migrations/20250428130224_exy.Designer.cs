@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Quizgeneration_Project.Data;
 
@@ -11,9 +12,11 @@ using Quizgeneration_Project.Data;
 namespace Quizgeneration_Project.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250428130224_exy")]
+    partial class exy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,7 +191,7 @@ namespace Quizgeneration_Project.Migrations
                     b.Property<int>("SelectedOptionsId")
                         .HasColumnType("int");
 
-                    b.Property<int>("StudentQuizAttemptedId")
+                    b.Property<int>("StudentQuizAttemptId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -197,7 +200,7 @@ namespace Quizgeneration_Project.Migrations
 
                     b.HasIndex("SelectedOptionsId");
 
-                    b.HasIndex("StudentQuizAttemptedId");
+                    b.HasIndex("StudentQuizAttemptId");
 
                     b.ToTable("StudentAnswers");
                 });
@@ -418,7 +421,7 @@ namespace Quizgeneration_Project.Migrations
 
                     b.HasOne("Quizgeneration_Project.model.StudentQuizAttempted", "StudentQuizAttempt")
                         .WithMany("StudentAnswers")
-                        .HasForeignKey("StudentQuizAttemptedId")
+                        .HasForeignKey("StudentQuizAttemptId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 

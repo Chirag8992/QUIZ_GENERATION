@@ -16,8 +16,10 @@ namespace Quizgeneration_Project.model
         public int SelectedOptionsId { get; set; }
 
         [Required]
-        public int StudentQuizAttemptedId { get; set; }  // This field is essential
+        public int StudentQuizAttemptedId { get; set; }  // This is the correct property name in your model
 
+        [ForeignKey("StudentQuizAttemptedId")]
+        public virtual StudentQuizAttempted StudentQuizAttempt { get; set; } = null!;
         // Navigation properties
         [ForeignKey("QuestionId")]
         public virtual Question Question { get; set; } = null!;
@@ -25,7 +27,6 @@ namespace Quizgeneration_Project.model
         [ForeignKey("SelectedOptionsId")]
         public virtual AnswerOption SelectedOption { get; set; } = null!;
 
-        [ForeignKey("StudentQuizAttemptedId")]
-        public virtual StudentQuizAttempted StudentQuizAttempt { get; set; } = null!;
+        
     }
 }
