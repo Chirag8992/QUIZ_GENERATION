@@ -2577,7 +2577,6 @@
       },
       "QuizResult": {
         "required": [
-          "completionDate",
           "quizId",
           "score",
           "studentId"
@@ -2603,6 +2602,10 @@
           "completionDate": {
             "type": "string",
             "format": "date-time"
+          },
+          "timeSpent": {
+            "type": "integer",
+            "format": "int32"
           },
           "quiz": {
             "$ref": "#/components/schemas/Quiz"
@@ -2636,6 +2639,10 @@
           "completionDate": {
             "type": "string",
             "format": "date-time"
+          },
+          "timeSpent": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -2822,6 +2829,14 @@
             "format": "int32"
           },
           "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "attemptDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "timeSpent": {
             "type": "integer",
             "format": "int32"
           },

@@ -196,12 +196,16 @@ namespace Quizgeneration_Project.Controllers
                 }
             }
 
+            // Convert duration from minutes to seconds for the frontend timer
+            int durationInSeconds = quiz.Duration * 60;
+
             var result = new
             {
                 Id = quiz.Id,
                 Title = quiz.Title,
                 Subject = quiz.Subject,
                 Standard = quiz.standard,
+                Duration = durationInSeconds, // Send duration in seconds to frontend
                 Questions = quiz.Questions.Select(q => new
                 {
                     Id = q.Id,
@@ -299,16 +303,34 @@ namespace Quizgeneration_Project.Controllers
         }
 
         // DELETE: api/Quiz/5
+        // DELETE: api/Quiz/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuiz(int id)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
+            // Fetch the quiz along with its related questions and answer options
+            var quiz = await _context.Quizzes
+                .Include(q => q.Questions)
+                    .ThenInclude(q => q.AnswerOptions)
+                .FirstOrDefaultAsync(q => q.Id == id);
+
             if (quiz == null)
             {
                 return NotFound();
             }
 
+            // Remove answer options related to each question
+            foreach (var question in quiz.Questions)
+            {
+                _context.AnswerOptions.RemoveRange(question.AnswerOptions);
+            }
+
+            // Remove all questions related to the quiz
+            _context.Questions.RemoveRange(quiz.Questions);
+
+            // Remove the quiz itself
             _context.Quizzes.Remove(quiz);
+
+            // Save changes to the database
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -353,6 +375,7 @@ namespace Quizgeneration_Project.Controllers
                         q.Subject,
                         q.StartTime,
                         q.Duration,
+                        DurationInSeconds = q.Duration * 60, // Convert minutes to seconds
                         q.standard,
                         QuestionCount = q.Questions.Count
                     })
@@ -369,9 +392,12 @@ namespace Quizgeneration_Project.Controllers
                             qr.Quiz.Title,
                             qr.Quiz.Subject,
                             qr.Quiz.standard,
-                            qr.Quiz.StartTime
+                            qr.Quiz.StartTime,
+                            qr.Quiz.Duration,
+                            DurationInSeconds = qr.Quiz.Duration * 60 // Convert minutes to seconds
                         },
                         qr.Score,
+                        qr.TimeSpent,
                         CompletedDate = qr.CompletionDate,
                         TotalQuestions = qr.Quiz.Questions.Count,
                         Percentage = (qr.Score * 100) / (qr.Quiz.Questions.Count > 0 ? qr.Quiz.Questions.Count : 1)

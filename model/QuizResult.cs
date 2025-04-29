@@ -1,10 +1,9 @@
-﻿
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using Student.model;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Quizgeneration_Project.model
 {
-    // Add this to the models folder
     public class QuizResult
     {
         [Key]
@@ -19,14 +18,15 @@ namespace Quizgeneration_Project.model
         [Required]
         public int Score { get; set; }
 
-        [Required]
         public DateTime CompletionDate { get; set; }
 
-        // Navigation properties
+        // New field for time tracking
+        public int TimeSpent { get; set; } // Time spent in seconds
+
         [ForeignKey("QuizId")]
         public Quiz Quiz { get; set; }
 
         [ForeignKey("StudentId")]
-        public StudentModel Student { get; set; }
+        public Student.model.StudentModel Student { get; set; }
     }
 }

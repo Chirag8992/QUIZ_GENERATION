@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\studentanswerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\studentanswerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\quizresultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\quizresultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +19,24 @@
       "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\quizscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\answeroptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\answeroptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\studentquizattemptedscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\studentquizattemptedscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\studentquizattempted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\studentquizattempted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\studentquizattempted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\studentquizattempted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\quize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,28 +67,8 @@
       "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\studentanswerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\studentanswerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\model\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:model\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\answeroptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|solutionrelative:controllers\\answeroptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4DC55F6-CFDE-48DA-BDC6-304FB74E29D2}|Quizgeneration Project.csproj|c:\\users\\chirag vasara\\desktop\\quizgeneration project (2)\\quizgeneration project\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,13 +122,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "StudentQuizAttemptedsController.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentQuizAttemptedsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentQuizAttemptedsController.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentQuizAttemptedsController.cs",
+              "RelativeToolTip": "Controllers\\StudentQuizAttemptedsController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvxEBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:20:11.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuizsController.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuizsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuizsController.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuizsController.cs",
+              "RelativeToolTip": "Controllers\\QuizsController.cs",
+              "ViewState": "AgIAAIgBAAAAAAAAAAAjwJwBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:18:13.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "QuizResultController.cs",
               "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuizResultController.cs",
               "RelativeDocumentMoniker": "Controllers\\QuizResultController.cs",
               "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuizResultController.cs",
               "RelativeToolTip": "Controllers\\QuizResultController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAnwJUAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-27T13:30:31.64Z",
               "EditorCaption": ""
@@ -136,140 +161,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Question.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Question.cs",
-              "RelativeDocumentMoniker": "model\\Question.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Question.cs",
-              "RelativeToolTip": "model\\Question.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T11:28:58.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuizsController.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuizsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuizsController.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuizsController.cs",
-              "RelativeToolTip": "Controllers\\QuizsController.cs",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAswIwBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:18:13.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentAnswer.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentAnswer.cs",
-              "RelativeDocumentMoniker": "model\\StudentAnswer.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentAnswer.cs",
-              "RelativeToolTip": "model\\StudentAnswer.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA3wB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:47:34.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAgwGAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T05:52:18.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Answeroption.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Answeroption.cs",
-              "RelativeDocumentMoniker": "model\\Answeroption.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Answeroption.cs",
-              "RelativeToolTip": "model\\Answeroption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:14:00.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentQuizAttemptedsController.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentQuizAttemptedsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentQuizAttemptedsController.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentQuizAttemptedsController.cs",
-              "RelativeToolTip": "Controllers\\StudentQuizAttemptedsController.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAAswAUBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:20:11.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentQuizAttempted.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentQuizAttempted.cs",
-              "RelativeDocumentMoniker": "model\\StudentQuizAttempted.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentQuizAttempted.cs",
-              "RelativeToolTip": "model\\StudentQuizAttempted.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAYwB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:48:53.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Quize.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Quize.cs",
-              "RelativeDocumentMoniker": "model\\Quize.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Quize.cs",
-              "RelativeToolTip": "model\\Quize.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA3wC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T06:21:22.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "teacherModel.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\teacherModel.cs",
-              "RelativeDocumentMoniker": "model\\teacherModel.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\teacherModel.cs",
-              "RelativeToolTip": "model\\teacherModel.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwBkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T07:16:58.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T06:04:34.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StudentAnswersController.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentAnswersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentAnswersController.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentAnswersController.cs",
-              "RelativeToolTip": "Controllers\\StudentAnswersController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwFIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:17:05.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "QuestionsController.cs",
               "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\QuestionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\QuestionsController.cs",
@@ -281,43 +172,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
+              "Title": "StudentAnswersController.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentAnswersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentAnswersController.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\StudentAnswersController.cs",
+              "RelativeToolTip": "Controllers\\StudentAnswersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T16:17:05.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "QuizResult.cs",
               "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\QuizResult.cs",
               "RelativeDocumentMoniker": "model\\QuizResult.cs",
               "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\QuizResult.cs",
               "RelativeToolTip": "model\\QuizResult.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAIwB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAtwB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T13:21:36.019Z"
+              "WhenOpened": "2025-04-27T13:21:36.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StudentModel.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentModel.cs",
-              "RelativeDocumentMoniker": "model\\StudentModel.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentModel.cs",
-              "RelativeToolTip": "model\\StudentModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T05:59:41.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "subject.cs",
-              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\subject.cs",
-              "RelativeDocumentMoniker": "model\\subject.cs",
-              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\subject.cs",
-              "RelativeToolTip": "model\\subject.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:49:10.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "AnswerOptionsController.cs",
               "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Controllers\\AnswerOptionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnswerOptionsController.cs",
@@ -326,6 +207,126 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T16:20:56.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentQuizAttempted.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentQuizAttempted.cs",
+              "RelativeDocumentMoniker": "model\\StudentQuizAttempted.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentQuizAttempted.cs",
+              "RelativeToolTip": "model\\StudentQuizAttempted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:48:53.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentModel.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentModel.cs",
+              "RelativeDocumentMoniker": "model\\StudentModel.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentModel.cs",
+              "RelativeToolTip": "model\\StudentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T05:59:41.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Answeroption.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Answeroption.cs",
+              "RelativeDocumentMoniker": "model\\Answeroption.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Answeroption.cs",
+              "RelativeToolTip": "model\\Answeroption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:14:00.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAgwGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T05:52:18.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentAnswer.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentAnswer.cs",
+              "RelativeDocumentMoniker": "model\\StudentAnswer.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\StudentAnswer.cs",
+              "RelativeToolTip": "model\\StudentAnswer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA3wB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:47:34.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Question.cs",
+              "RelativeDocumentMoniker": "model\\Question.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Question.cs",
+              "RelativeToolTip": "model\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T11:28:58.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Quize.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Quize.cs",
+              "RelativeDocumentMoniker": "model\\Quize.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\Quize.cs",
+              "RelativeToolTip": "model\\Quize.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA3wC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:21:22.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "teacherModel.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\teacherModel.cs",
+              "RelativeDocumentMoniker": "model\\teacherModel.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\teacherModel.cs",
+              "RelativeToolTip": "model\\teacherModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwBkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T07:16:58.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T06:04:34.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "subject.cs",
+              "DocumentMoniker": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\subject.cs",
+              "RelativeDocumentMoniker": "model\\subject.cs",
+              "ToolTip": "C:\\Users\\Chirag Vasara\\Desktop\\Quizgeneration Project (2)\\Quizgeneration Project\\model\\subject.cs",
+              "RelativeToolTip": "model\\subject.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:49:10.403Z"
             },
             {
               "$type": "Document",

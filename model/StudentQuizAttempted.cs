@@ -1,13 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Student.model;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Quizgeneration_Project.model
 {
     public class StudentQuizAttempted
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
@@ -17,15 +17,19 @@ namespace Quizgeneration_Project.model
         public int StudentId { get; set; }
 
         [Required]
-        public int Score { get; set; } = 0;
+        public int Score { get; set; }
 
-        // Navigation properties
+        public DateTime AttemptDate { get; set; } = DateTime.Now;
+
+        // New field for time tracking
+        public int TimeSpent { get; set; } // Time spent in seconds
+
         [ForeignKey("QuizId")]
-        public virtual Quiz Quiz { get; set; } = null!;
+        public Quiz Quiz { get; set; }
 
         [ForeignKey("StudentId")]
-        public virtual StudentModel Student { get; set; } = null!;
+        public Student.model.StudentModel Student { get; set; }
 
-        public virtual ICollection<StudentAnswer> StudentAnswers { get; set; } = new List<StudentAnswer>();
+        public List<StudentAnswer> StudentAnswers { get; set; }
     }
 }

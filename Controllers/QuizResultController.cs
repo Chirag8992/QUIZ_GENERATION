@@ -43,7 +43,8 @@ namespace Quizgeneration_Project.Controllers
                     QuizId = quizResult.QuizId,
                     StudentId = quizResult.StudentId,
                     Score = quizResult.Score,
-                    CompletionDate = quizResult.CompletionDate
+                    CompletionDate = quizResult.CompletionDate,
+                    TimeSpent = quizResult.TimeSpent // Store the time spent
                 };
 
                 _context.QuizResults.Add(newQuizResult);
@@ -105,13 +106,17 @@ namespace Quizgeneration_Project.Controllers
                 var studentResults = new List<StudentResultDto>();
                 foreach (var result in quizResults)
                 {
-                    // Add student result - using quiz duration as we don't have actual time taken
+                    // Use the actual time spent if available
+                    int timeTaken = result.TimeSpent > 0
+                        ? result.TimeSpent
+                        : quiz.Duration * 60; // Fallback to quiz duration in seconds
+
                     studentResults.Add(new StudentResultDto
                     {
                         StudentId = result.StudentId,
                         StudentName = result.Student?.Name ?? "Unknown Student",
                         Score = result.Score,
-                        TimeTaken = quiz.Duration * 60, // Convert minutes to seconds
+                        TimeTaken = timeTaken,
                         SubmittedAt = result.CompletionDate
                     });
                 }
@@ -124,12 +129,17 @@ namespace Quizgeneration_Project.Controllers
                         // Add from attempts if not already added
                         if (!studentResults.Any(sr => sr.StudentId == attempt.StudentId))
                         {
+                            // Use the time spent if available on the attempt
+                            int timeTaken = attempt.TimeSpent > 0
+                                ? attempt.TimeSpent
+                                : quiz.Duration * 60; // Fallback to quiz duration in seconds
+
                             studentResults.Add(new StudentResultDto
                             {
                                 StudentId = attempt.StudentId,
                                 StudentName = attempt.Student?.Name ?? "Unknown Student",
                                 Score = attempt.Score,
-                                TimeTaken = quiz.Duration * 60, // Convert minutes to seconds
+                                TimeTaken = timeTaken,
                                 SubmittedAt = DateTime.Now // Fallback to current time
                             });
                         }
@@ -140,6 +150,10 @@ namespace Quizgeneration_Project.Controllers
                 int totalPossibleMarks = quiz.Questions.Sum(q => q.Marks);
                 double averageScore = studentResults.Any() && totalPossibleMarks > 0 ?
                     studentResults.Average(sr => (double)sr.Score / totalPossibleMarks * 100) : 0;
+
+                // Calculate average time taken
+                double averageTime = studentResults.Any() ?
+                    studentResults.Average(sr => sr.TimeTaken) : quiz.Duration * 60;
 
                 // Create question analysis
                 var questionAnalysis = new List<QuestionAnalysisDto>();
@@ -166,7 +180,7 @@ namespace Quizgeneration_Project.Controllers
                             QuestionText = question.QuestionText ?? $"Question {question.Id}",
                             TotalAnswers = studentAnswers.Count,
                             CorrectAnswers = correctAnswers,
-                            AverageTime = 0 // Not tracking time per question
+                            AverageTime = 0 // Not tracking time per question yet
                         });
                     }
                 }
@@ -176,7 +190,7 @@ namespace Quizgeneration_Project.Controllers
                 {
                     TotalAttempts = Math.Max(quizResults.Count, studentAttempts.Count),
                     AverageScore = averageScore,
-                    AverageTime = quiz.Duration * 60, // Convert minutes to seconds
+                    AverageTime = (int)averageTime,
                     StudentResults = studentResults,
                     QuestionAnalysis = questionAnalysis
                 };
@@ -205,6 +219,8 @@ namespace Quizgeneration_Project.Controllers
         public int Score { get; set; }
 
         public DateTime CompletionDate { get; set; } = DateTime.Now;
+
+        public int TimeSpent { get; set; } // Time spent in seconds
     }
 
     public class QuizStatisticsDto

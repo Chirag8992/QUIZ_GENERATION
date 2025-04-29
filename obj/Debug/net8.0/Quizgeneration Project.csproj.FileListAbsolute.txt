@@ -577,10 +577,10 @@ C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Quizgeneration Project.props
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Quizgeneration Project.props
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\Quizgene.748F432F.Up2Date
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\Quizgeneration Project.dll
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\refint\Quizgeneration Project.dll
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\Quizgeneration Project.pdb
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\Quizgeneration Project.genruntimeconfig.cache
 C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\ref\Quizgeneration Project.dll
+C:\Users\Chirag Vasara\Desktop\Quizgeneration Project (2)\Quizgeneration Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

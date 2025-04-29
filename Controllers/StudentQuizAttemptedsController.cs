@@ -1,4 +1,5 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Quizgeneration_Project.Controllers.Quizgeneration_Project.Dto;
@@ -8,7 +9,27 @@ using Quizgeneration_Project.model;
 namespace Quizgeneration_Project.Controllers
 {
     namespace Quizgeneration_Project.Dto
+
+
     {
+
+        public class StudentQuizSubmissionDto
+        {
+            [Required]
+            public int QuizId { get; set; }
+
+            [Required]
+            public int StudentId { get; set; }
+
+            [Required]
+            public int Score { get; set; }
+
+            // New field for time tracking
+            public int TimeSpent { get; set; } // Time spent in seconds
+
+            [Required]
+            public List<QuestionAnswerDto> Answers { get; set; }
+        }
         public class QuizSubmissionDto
         {
             public int QuizId { get; set; }
